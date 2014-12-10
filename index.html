@@ -2,9 +2,8 @@
 layout: default
 ---
 <div class="search">
-    <script type="text/javascript" src="index.json"></script>
     <script type="text/javascript">
-
+        {% include index.js %}
 
         $(document).ready(function () {
             var index = lunr(function () {
@@ -52,6 +51,7 @@ layout: default
         </div>
     </div>
     <div>
+        {% include table.html %}
         <div id="search-results">
 
         </div>
