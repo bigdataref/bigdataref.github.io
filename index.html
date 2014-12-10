@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="search">
+    <script type="text/javascript" src="index.json"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var index = lunr(function () {
+                this.field('name', {boost: 10});
+                this.field('url');
+                this.field('description');
+                this.field('tags');
+            });
+            indexJson.map(function (raw, ind) {
+                raw.id = ind;
+                index.add(raw);
+            });
+            $("#search-query").on({
+                "keyup": function (eventObject) {
+                    var result = index.search(this.value);
+                    result.map(function (resultRaw) {
+                        var result = indexJson[resultRaw.ref]
+                        $("#search-results").empty();
+                        $("#search-results").append("<div>" + result.name + "</div>" + "<div>" + result.description + "</div>");
+                    });
+                    if(result.length == 0){
+                        $("#search-results").empty();
+                    }
+                }
+            });
+        });
+
+
+    </script>
+
+    <div class="jumbotron">
+        <h1>Big data reference.</h1>
+
+        <p>Search anything you want into big data world.</p>
+
+        <div class="input-group">
+            <span class="input-group-addon"><div class="glyphicon glyphicon-search"></div></span>
+
+            <div id="search">
+                <form action="/" method="get">
+                    <input type="text" id="search-query" name="q" class="form-control input-lg"
+                           placeholder="Search here" autocomplete="off">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="search-results">
+
+        </div>
+    </div>
+</div>
