@@ -6,5 +6,7 @@ url: "http://bigdatareference.github.io" # the base hostname & protocol for your
 
 markdown: kramdown
 
+exclude: [bigdatareference.iml, entry-template.yml,README.md]
+
 lunr_search:
   excludes: [index.html]
