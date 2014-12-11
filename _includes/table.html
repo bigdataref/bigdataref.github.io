@@ -1,29 +1,46 @@
-<div class="table-container">
-    <div class="row">
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
-        <div class="col-md-1">.col-md-1</div>
+{% for entry_hash in site.data.entries %}
+{% assign entry = entry_hash[1] %}
+{% assign i = forloop.index -1 %}
+<div class="panel panel-default entry-panel" id="entry-{{forloop.index | minus:1}}">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{entry.name}}</h3>
     </div>
-    <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class='col-sm-4'>
+                <img src="/icons/{{entry.icon}}" class="pull-left" alt="{{entry.name}}">
+            </div>
+            <div class='col-sm-8'>
+                <p>Page: {{entry.url}}</p>
+
+                <p>Repo: {{entry.repoUrl}}</p>
+
+                <p>Company Name:  {{entry.companyName}}</p>
+
+                <p>Company Page:  {{entry.companyUrl}}</p>
+
+                <p>Languages supported:
+                    {% for ls in entry.languagesSupported %}
+                        <button type="button" class="btn btn-primary btn-xs">{{ls}}</button>
+                    {% endfor %}
+                </p>
+
+                <p>Language:  {{entry.language}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-sm-12'>
+                <p>
+                    {{entry.description}}
+                </p>
+            </div>
+        </div>
+
     </div>
-    <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">.col-md-6</div>
-        <div class="col-md-6">.col-md-6</div>
+    <div class="panel-footer">
+        {% for tag in entry.tags %}
+        <button type="button" class="btn btn-primary btn-xs">{{tag}}</button>
+        {% endfor %}
     </div>
 </div>
+{% endfor %}
