@@ -1,0 +1,46 @@
+#Name of the entry Spark, Kafka, etc.
+name:
+
+#A short description of the application
+description:
+
+#Url official page
+url:
+
+#If the project have one, Url of the repo
+repoUrl:
+
+#Icon name contained into icons folder. Example: spark.png. It must be 100X100 size
+icon:
+
+#Tags to help to find the entry. There are some frecuents tags:
+#Distrubuted filesystem
+#Distributed programming
+#NoSQL database
+#NewSQL database
+#Data ingestion
+#Service programming
+#Scheduling
+#Machine learning
+#Benchmarking
+#Security
+#System deployment
+#Development frameworks
+#Aggregation engines
+#SQL engines
+#Data viewers
+tags:[]
+
+#Entry language. Example: Java
+language:
+
+#Entry languages supported. Example: [Java,Scala,Python]
+languagesSupported:
+
+#Entry license. Example: Apache 2
+license:
+
+#Company that maintain the entry, if any
+companyName:
+#Company url that maintain the entry, if any
+companyUrl:
