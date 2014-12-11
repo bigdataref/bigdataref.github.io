@@ -1,4 +1,11 @@
 name: Spark
-url: http://www.google.com
-description: description here
-tags: apache, scala, map reduce
+description: Apache Spark is an open-source cluster computing framework originally developed in the AMPLab at UC Berkeley. In contrast to Hadoop's two-stage disk-based MapReduce paradigm, Spark's in-memory primitives provide performance up to 100 times faster for certain applications.
+url: https://spark.apache.org/
+repoUrl: https://github.com/apache/spark
+icon: spark.png
+tags: [SQL engines,Distrubuted programming,Machine learning,Data viewers]
+language: Scala
+languagesSupported: [Scala,Java,Python,SQL]
+license: Apache 2
+companyName:
+companyUrl:

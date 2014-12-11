@@ -1,4 +1,11 @@
-name: PrestoDb
-url: http://www.other.com
-description: description presto here
-tags: apache, java, database
+name: Presto Db
+description: Presto is an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes. \n Presto was designed and written from the ground up for interactive analytics and approaches the speed of commercial data warehouses while scaling to the size of organizations like Facebook.
+url: http://prestodb.io/
+repoUrl: https://github.com/facebook/presto
+icon: prestodb.jpg
+tags: [SQL engines,NoSQL database]
+language: Java
+languagesSupported: SQL
+license: Apache 2
+companyName:
+companyUrl:
