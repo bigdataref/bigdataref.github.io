@@ -13,10 +13,15 @@ layout: default
             });
 
             var index = lunr(function () {
-                this.field('name', {boost: 10});
-                this.field('url');
-                this.field('description');
-                this.field('tags');
+                this.field('name', {boost: 100});
+                this.field('url', {boost: 20});
+                this.field('repoUrl', {boost: 20});
+                this.field('companyName', {boost: 80});
+                this.field('companyPage', {boost: 10});
+                this.field('languagesSupported', {boost: 50});
+                this.field('language', {boost: 50});
+                this.field('description', {boost: 60});
+                this.field('tags', {boost: 100});
             });
 
             indexJson.map(function (raw, ind) {
@@ -24,18 +29,35 @@ layout: default
                 index.add(raw);
             });
 
+            var $allCards = $(".entry-panel").clone();
             function searchSomething(searchQuery) {
-                var result = index.search(searchQuery);
-                console.log("RESULT",result);
-                result.map(function (resultRaw) {
-                    $(".entry-panel").hide();
-                    var i = resultRaw.ref
-                    console.log(i)
-                    $("#entry-" + i).show();
-                });
-                if (result.length == 0) {
-                    $(".entry-panel").show();
+                if (searchQuery.length > 3) {
+                    var result = index.search(searchQuery);
+                    if(result.length > 0){
+                        $(".entry-panel").remove();
+                        var resultMap = {};
+                        result.map(function(val){
+                            resultMap["entry-"+val.ref] = val.score;
+                        });
+
+                        var $filteredCards = $allCards.filter(function(index,element){
+                            if(resultMap[element.id]!= undefined){
+                               return element;
+                            }
+                        });
+
+                        var $sortedCards = $filteredCards.sort(function(a,b){
+                            var scoreA = resultMap[a.id];
+                            var scoreB = resultMap[b.id];
+                            return scoreB-scoreA;
+                        });
+
+                        $sortedCards.appendTo(".cardsWrapper");
+
+                        return;
+                    }
                 }
+                $allCards.appendTo(".cardsWrapper");
             }
         });
 
@@ -58,20 +80,25 @@ layout: default
             </div>
             <!-- TODO  add frequent tags -->
             <div class="dropdown">
-                <button class="btn btn-default dropdown-toggle input-lg" type="button" id="freq-tags" data-toggle="dropdown">
+                <button class="btn btn-default dropdown-toggle input-lg" type="button"
+                        id="freq-tags" data-toggle="dropdown">
                     Frequent Tags
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
+                        action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else
+                        here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated
+                        link</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div>
-        {% include table.html %}
+    <div class="cardsWrapper">
+        {% include cards.html %}
     </div>
 </div>
