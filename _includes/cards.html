@@ -21,7 +21,7 @@
 
                 <p>Languages supported:
                     {% for ls in entry.languagesSupported %}
-                        <button type="button" class="btn btn-primary btn-xs">{{ls}}</button>
+                        <button type="button" class="btn btn-primary btn-xs" onclick="document.searchSomething('{{ls}}')">{{ls}}</button>
                     {% endfor %}
                 </p>
 
@@ -39,7 +39,7 @@
     </div>
     <div class="panel-footer">
         {% for tag in entry.tags %}
-        <button type="button" class="btn btn-primary btn-xs">{{tag}}</button>
+        <button type="button" class="btn btn-primary btn-xs" onclick="document.searchSomething('{{tag}}')">{{tag}}</button>
         {% endfor %}
     </div>
 </div>

@@ -8,7 +8,7 @@ layout: default
         $(document).ready(function () {
             $("#search-query").on({
                 "keyup": function () {
-                    document.searchSomething(this.value)
+                    document.searchSomething(this.value,false)
                 }
             });
 
@@ -30,7 +30,10 @@ layout: default
             });
 
             var $allCards = $(".entry-panel").clone();
-            document.searchSomething = function(searchQuery) {
+            document.searchSomething = function(searchQuery,isLink) {
+                if(isLink == undefined){
+                    $("#search-query").val(searchQuery);
+                }
                 if (searchQuery.length > 3) {
                     var result = index.search(searchQuery);
                     if(result.length > 0){
