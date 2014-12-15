@@ -8,7 +8,7 @@ layout: default
         $(document).ready(function () {
             $("#search-query").on({
                 "keyup": function () {
-                    searchSomething(this.value)
+                    document.searchSomething(this.value)
                 }
             });
 
@@ -30,7 +30,7 @@ layout: default
             });
 
             var $allCards = $(".entry-panel").clone();
-            function searchSomething(searchQuery) {
+            document.searchSomething = function(searchQuery) {
                 if (searchQuery.length > 3) {
                     var result = index.search(searchQuery);
                     if(result.length > 0){
@@ -73,10 +73,8 @@ layout: default
             <span class="input-group-addon"><div class="glyphicon glyphicon-search"></div></span>
 
             <div id="search">
-                <form action="/" method="get">
-                    <input type="text" id="search-query" name="q" class="form-control input-lg"
+                <input type="text" id="search-query" name="q" class="form-control input-lg"
                            placeholder="Search here" autocomplete="off">
-                </form>
             </div>
             <!-- TODO  add frequent tags -->
             <div class="dropdown">
@@ -86,7 +84,7 @@ layout: default
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:document.searchSomething('SQL engines')">Action</a>
                     </li>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another
                         action</a></li>
