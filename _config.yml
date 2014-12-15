@@ -2,11 +2,11 @@ title: Big data reference
 email: antnavper@gmail.com
 description: Put description here
 baseurl: ""
-url: "http://bigdatareference.github.io" # the base hostname & protocol for your site
+url: "http://bigdataref.github.io" # the base hostname & protocol for your site
 
 markdown: kramdown
 
-exclude: [bigdatareference.iml, entry-template.yml,README.md]
+exclude: [bigdatareference.iml,bigdataref.iml, entry-template.yml,README.md]
 
 lunr_search:
   excludes: [index.html]
