@@ -1,11 +1,18 @@
 var indexJson = [
 {% for entry_hash in site.data.entries %}
-{% assign entry = entry_hash[1] %}
+    {% assign entry = entry_hash[1] %}
+    {% assign i = forloop.index -1 %}
 {
-"name": "{{entry.name}}",
-"url": "{{entry.url}}",
-"description": "{{entry.description}}",
-"tags": "{{entry.tags}}"
+"id":"entry-{{forloop.index | minus:1}}",
+"name":"{{entry.name}}",
+"url":"{{entry.url}}",
+"repoUrl":"{{entry.repoUrl}}",
+"companyName":"{{entry.companyName}}",
+"companyPage":"{{entry.companyUrl}}",
+"languagesSupported":"{% for ls in entry.languagesSupported %}{{ls}},{% endfor %}",
+"language":"{{entry.language}}",
+"description":"{{entry.description}}",
+"tags":"{% for tag in entry.tags %}{{tag}},{% endfor %}"
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
