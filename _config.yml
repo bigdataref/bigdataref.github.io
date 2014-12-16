@@ -7,6 +7,3 @@ url: "http://bigdataref.github.io" # the base hostname & protocol for your site
 markdown: kramdown
 
 exclude: [bigdatareference.iml,bigdataref.iml, entry-template.yml,README.md]
-
-lunr_search:
-  excludes: [index.html]
