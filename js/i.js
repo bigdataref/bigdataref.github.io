@@ -1,3 +1,5 @@
+---
+---
 var indexJson = [
 {% for entry_hash in site.data.entries %}
     {% assign entry = entry_hash[1] %}
