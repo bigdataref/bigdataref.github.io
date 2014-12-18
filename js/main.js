@@ -27,7 +27,7 @@ $(document).ready(function () {
         if(isLink == undefined){
             $("#search-query").val(searchQuery);
         }
-        if (searchQuery.length > 3) {
+        if (searchQuery.length > 2) {
             var result = index.search(searchQuery);
             if(result.length > 0){
                 $(".entry-panel").remove();
@@ -53,6 +53,7 @@ $(document).ready(function () {
                 return;
             }
         }
+        $(".entry-panel").remove();
         $allCards.appendTo(".cardsWrapper");
     }
 });
