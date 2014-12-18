@@ -7,39 +7,43 @@
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class='col-sm-4'>
-                <img src="/icons/{{entry.icon}}" class="pull-left" alt="{{entry.name}}">
+            <div class='col-sm-2'>
+                <img src="/icons/{{entry.icon}}" class="pull-left" alt="{{entry.name}}" width="100">
             </div>
-            <div class='col-sm-8'>
-                <p>Page: {{entry.url}}</p>
-
-                <p>Repo: {{entry.repoUrl}}</p>
-
-                <p>Company Name:  {{entry.companyName}}</p>
-
-                <p>Company Page:  {{entry.companyUrl}}</p>
-
-                <p>Languages supported:
-                    {% for ls in entry.languagesSupported %}
-                        <button type="button" class="btn btn-primary btn-xs" onclick="document.searchSomething('{{ls}}')">{{ls}}</button>
-                    {% endfor %}
-                </p>
-
-                <p>Language:  {{entry.language}}</p>
+            <div class='col-sm-10'>
+                <p>{{entry.description}}</p>
             </div>
         </div>
         <div class="row">
-            <div class='col-sm-12'>
-                <p>
-                    {{entry.description}}
+            <div class='col-sm-4'>
+                <p>Page: <a href="{{entry.url}}">{{entry.url}}</a></p>
+
+                <p>Repo: <a href="{{entry.repoUrl}}">{{entry.repoUrl}}</a></p>
+            </div>
+            <div class='col-sm-4'>
+                <p>Company Name: {{entry.companyName}}</p>
+
+                <p>Company Page: <a href="{{entry.companyUrl}}">{{entry.companyUrl}}</a></p>
+            </div>
+            <div class='col-sm-4'>
+                <p>Languages supported:
+                    {% for ls in entry.languagesSupported %}
+                    <button type="button" class="btn btn-primary btn-xs"
+                            onclick="document.searchSomething('{{ls}}')">{{ls}}
+                    </button>
+                    {% endfor %}
                 </p>
+
+                <p>Language: {{entry.language}}</p>
             </div>
         </div>
 
     </div>
     <div class="panel-footer">
         {% for tag in entry.tags %}
-        <button type="button" class="btn btn-primary btn-xs" onclick="document.searchSomething('{{tag}}')">{{tag}}</button>
+        <button type="button" class="btn btn-primary btn-xs"
+                onclick="document.searchSomething('{{tag}}')">{{tag}}
+        </button>
         {% endfor %}
     </div>
 </div>
