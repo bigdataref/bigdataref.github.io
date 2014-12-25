@@ -3,7 +3,7 @@ description: GearPump is a lightweight real-time big data streaming engine. It i
 url:
 repoUrl: https://github.com/intel-hadoop/gearpump
 icon: gearpump.png
-tags: [Data ingestion, Streaming, real-time]
+tags: [Data ingestion, Streaming, Real time]
 language: Scala
 languagesSupported: Scala
 license: Apache 2.0
