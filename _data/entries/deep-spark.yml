@@ -1,0 +1,14 @@
+name: Deep-spark
+description: |
+    Deep is a thin integration layer between Apache Spark and several NoSQL datastores. 
+    We actually support Apache Cassandra and MongoDB, but in the near future we will add 
+    support for sever other datastores.
+url: http://stratio.github.io/deep-spark/
+repoUrl: https://github.com/Stratio/deep-spark
+icon: no-image.png
+tags: [Distributed programming, Spark, Development frameworks]
+language: Java
+languagesSupported: [Java, Scala]
+license: Apache 2.0
+companyName: Stratio
+companyUrl: http://www.stratio.com
