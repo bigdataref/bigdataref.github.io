@@ -1,0 +1,14 @@
+name: Spark-jobserver
+description: |
+    Spark-jobserver provides a RESTful interface for submitting and managing Apache Spark jobs,
+    jars, and job contexts. This repo contains the complete Spark job server project, including 
+    unit tests and deploy scripts. It was originally started at Ooyala.
+url:
+repoUrl: https://github.com/spark-jobserver/spark-jobserver
+icon: no-image.png
+tags: [Spark, System deployment, Distributed programming]
+language: Scala
+languagesSupported: [Scala]
+license: Apache 2.0
+companyName: Ooyala
+companyUrl: http://www.ooyala.com/
