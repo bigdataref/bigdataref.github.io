@@ -13,7 +13,7 @@ var indexJson = [
 "companyPage":"{{entry.companyUrl}}",
 "languagesSupported":"{% for ls in entry.languagesSupported %}{{ls}},{% endfor %}",
 "language":"{{entry.language}}",
-"description":"{{entry.description}}",
+"description":"{{entry.description | strip_newlines}}",
 "tags":"{% for tag in entry.tags %}{{tag}},{% endfor %}"
 } {% unless forloop.last %},{% endunless %}
 {% endfor %}
