@@ -1,0 +1,15 @@
+name: Spindle
+description: |
+    Spindle is a prototype Spark-based web analytics query engine designed around 
+    the requirements of production workloads. Spindle exposes query requests through 
+    a multi-threaded HTTP interface implemented with Spray. Queries are processed by 
+    loading data from Apache Parquet columnar storage format on the Hadoop distributed filesystem.
+url: http://adobe-research.github.io/spindle/
+repoUrl: https://github.com/adobe-research/spindle
+icon: no-image.png
+tags: [Spark, Distrubuted filesystem, Distributed programming, Aggregation engines]
+language: Javascript, Python, Scala
+languagesSupported: []
+license: Apache 2.0
+companyName: Adobe
+companyUrl: http://www.adobe.com/
