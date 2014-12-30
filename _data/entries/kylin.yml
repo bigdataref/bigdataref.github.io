@@ -1,0 +1,14 @@
+name: Kylin
+description: | 
+    Apache Kylin is an open source Distributed Analytics Engine from eBay Inc. 
+    that provides SQL interface and multi-dimensional analysis (OLAP) on Hadoop 
+    supporting extremely large datasets.
+url: http://www.kylin.io/
+repoUrl: https://github.com/KylinOLAP/Kylin
+icon: kylin.jpg
+tags: [Aggregation engines, Hadoop, OLAP, SQL]
+language: Java, Javascript
+languagesSupported: [SQL]
+license: Apache 2.0
+companyName: eBay
+companyUrl: http://www.ebayinc.com/
