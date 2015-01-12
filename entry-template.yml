@@ -14,8 +14,9 @@ repoUrl:
 icon:
 
 #Tags to help to find the entry. There are some frecuents tags:
-#Distrubuted filesystem
+#Distributed filesystem
 #Distributed programming
+#Realtime processing
 #NoSQL database
 #NewSQL database
 #Data ingestion
