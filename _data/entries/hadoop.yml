@@ -3,7 +3,7 @@ description: The Apache Hadoop software library is a framework that allows for t
 url: http://hadoop.apache.org/
 repoUrl: https://github.com/apache/hadoop
 icon: hadoop.jpg
-tags: [Distrubuted filesystem, HDFS, Distributed programming, YARN]
+tags: [Distributed filesystem, HDFS, Distributed programming, YARN]
 language: Java
 languagesSupported: Java
 license: Apache 2
