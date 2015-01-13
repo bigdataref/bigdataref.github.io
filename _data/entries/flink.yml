@@ -1,0 +1,11 @@
+name: Flink
+description: Apache Flink is an in-memory scalable data processing framework. Like Spark, the exposed API looks like a function collection API. That is, your data is essentially sequences and list of any kind of data, and you have methods like map, groupBy, or reduce to perform computations on these data sets which will then automatically be scaled out to the cluster. The main difference to Spark is that Flink takes an approach known from databases to optimize queries in several ways.
+url: http://flink.apache.org/
+repoUrl: https://github.com/apache/flink
+icon: flink.png
+tags: [Distrubuted programming,Machine learning]
+language: Java
+languagesSupported: [Scala,Java]
+license: Apache 2
+companyName:
+companyUrl:
