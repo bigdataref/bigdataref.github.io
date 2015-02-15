@@ -20,4 +20,4 @@ language: Scala
 languagesSupported: [RPN expressions, SQL]
 license: Apache 2.0
 companyName: Netflix
-companyUrl: https://www.netflix.com
+companyUrl: https://www.netflix.com/global
