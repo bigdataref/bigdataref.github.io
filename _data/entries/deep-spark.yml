@@ -5,7 +5,7 @@ description: |
     support for sever other datastores.
 url: http://stratio.github.io/deep-spark/
 repoUrl: https://github.com/Stratio/deep-spark
-icon: no-image.png
+icon:
 tags: [Distributed programming, Spark, Development frameworks]
 language: Java
 languagesSupported: [Java, Scala]
