@@ -16,14 +16,20 @@
         </div>
         <div class="row">
             <div class='col-sm-4'>
-                <p>Page: <a href="{{entry.url}}">{{entry.url}}</a></p>
+                {% if entry.url %}
+                    <p>Page: <a href="{{entry.url}}">{{entry.url}}</a></p>
+                {% endif %}
 
-                <p>Repo: <a href="{{entry.repoUrl}}">{{entry.repoUrl}}</a></p>
+                {% if entry.repoUrl %}
+                    <p>Repo: <a href="{{entry.repoUrl}}">{{entry.repoUrl}}</a></p>
+                {% endif %}
             </div>
             <div class='col-sm-4'>
                 <p>Company Name: {{entry.companyName}}</p>
 
-                <p>Company Page: <a href="{{entry.companyUrl}}">{{entry.companyUrl}}</a></p>
+                {% if entry.companyUrl %}
+                    <p>Company Page: <a href="{{entry.companyUrl}}">{{entry.companyUrl}}</a></p>
+                {% endif %}
             </div>
             <div class='col-sm-4'>
                 <p>Languages supported:
