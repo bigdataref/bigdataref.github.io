@@ -4,8 +4,10 @@ rvm:
 - 2.1
 
 before_install:
-  - gem install 'github-pages'
-  - gem install 'html-proofer'
+  - gem install liquid -v 2.5.1 --no-rdoc --no-ri
+  - gem install jekyll -v 1.0.2 --no-rdoc --no-ri
+  - gem install 'github-pages' --no-rdoc --no-ri
+  - gem install 'html-proofer' --no-rdoc --no-ri
 
 before_script: chmod +x ./script/cibuild
 
