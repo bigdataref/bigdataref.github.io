@@ -14,7 +14,7 @@ description: |
     of data and can scale with the hardware we use to analyze and store it.
 url:
 repoUrl: https://github.com/Netflix/atlas
-icon: atlas.jpg
+icon: atlas.png
 tags: [Aggregation engines,Data viewers]
 language: Scala
 languagesSupported: [RPN expressions, SQL]
