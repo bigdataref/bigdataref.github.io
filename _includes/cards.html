@@ -1,50 +1,87 @@
-{% for entry_hash in site.data.entries %}
-{% assign entry = entry_hash[1] %}
-{% assign i = forloop.index -1 %}
-<div class="panel panel-default entry-panel" id="entry-{{forloop.index | minus:1}}">
-    <div class="panel-heading">
-        <h3 class="panel-title">{{entry.name}}</h3>
-    </div>
-    <div class="panel-body">
-        <div class="row">
-            <div class='col-sm-2'>
-                <img src="/icons/{{entry.icon}}" class="pull-left" alt="{{entry.name}}" width="100">
-            </div>
-            <div class='col-sm-10'>
-                <p>{{entry.description}}</p>
-            </div>
+<div class="container">
+    <div class="js-cards bdr-cards">
+
+    {% for entry_hash in site.data.entries %}
+    {% assign entry = entry_hash[1] %}
+    {% assign i = forloop.index -1 %}
+
+        <div class="bdr-card js-entry" id="entry-{{forloop.index | minus:1}}">
+            <article>
+                    <h1 class="bdr-card-title"><span class="bdr-card-title-txt">{{entry.name}}</span><span class="bdr-card-title-deco"></span></span></h1>
+
+                    <div class="row">
+
+                    <div class="col-md-10 col-sm-9 col-xs-12 ">
+                        <div class="text-center bdr-logo-helper pull-left">
+                            {% if entry.icon %}
+                                <img src="/icons/{{entry.icon}}" class="bdr-logo" alt="{{entry.name}}">
+                            {% else %}
+                                <div class="text-uppercase bdr-no-logo bdr-bold">{{entry.name | truncate: 1, '' }}</div>
+                            {% endif %}
+                         </div>
+
+                        <p class="bdra-desc">{{entry.description}}</p>
+
+                    </div>
+
+
+                    <div class="col-md-2 col-sm-3 col-xs-12 bdr-actions">
+                        <div class="bdr-mbs text-uppercase clearfix">
+                            <a class="bdr-bold btn btn-success pull-left bdr-half {% if entry.url == null %}disabled bdr-disabled{% endif %}" href="{{entry.url}}" target="_blank">Site</a>
+                            <a class="bdr-bold btn btn-success pull-left bdr-half {% if entry.repoUrl == null %}disabled bdr-disabled{% endif %}" href="{{entry.repoUrl}}" target="_blank">Repo</a>
+                        </div>
+
+                        {% if entry.companyName %}
+                            <span class="text-uppercase bdr-full bdr-dib bdr-xs-no-full bdr-info">
+                                <span class="text-muted">Company: </span>
+                                <a class="bdr-bold {% if entry.companyUrl == null %}disabled bdr-disabled{% endif %}" href="{{entry.companyUrl}}" target="_blank">
+                                {{entry.companyName}}
+                                </a>
+                            </span>
+                        {% endif %}
+
+                        {% if entry.language %}
+                            <span class="text-uppercase bdr-full bdr-dib bdr-xs-no-full bdr-info">
+                                <span class="text-muted">Language: </span>
+                                <span class="bdr-bold">{{entry.language}}</span>
+                            </span>
+                        {% endif %}
+
+                        <div class="bdr-full bdr-dib bdr-xs-no-full bdr-info">
+                        {% if  entry.languagesSupported %}
+                            <span class="text-uppercase bdr-full text-muted bdr-dib bdr-xs-no-full">Languages supported:</span>
+                        {% endif %}
+
+                        {% for ls in entry.languagesSupported %}
+                            <a class="btn btn-xs btn-default bdr-mtxxs"
+                                onclick="document.searchSomething('{{ls}}')">{{ls}}
+                            </a>
+                        {% endfor %}
+                        </div>
+
+                    </div>
+
+                </div>
+                {% if entry.tags %}
+                <div class="bdr-tags">
+                    <aside>
+                        {% for tag in entry.tags %}
+                        <button type="button" class="btn btn-warning btn-xs"
+                                onclick="document.searchSomething('{{tag}}')">
+                            <span class="glyphicon glyphicon-tag bdr-glyphicon-tag" aria-hidden="true"></span>
+                            {{tag}}
+                        </button>
+                        {% endfor %}
+
+                    </aside>
+                </div>
+                {% endif %}
+
+
+            </article>
         </div>
-        <div class="row">
-            <div class='col-sm-4'>
-                <p>Page: <a href="{{entry.url}}">{{entry.url}}</a></p>
 
-                <p>Repo: <a href="{{entry.repoUrl}}">{{entry.repoUrl}}</a></p>
-            </div>
-            <div class='col-sm-4'>
-                <p>Company Name: {{entry.companyName}}</p>
+    {% endfor %}
 
-                <p>Company Page: <a href="{{entry.companyUrl}}">{{entry.companyUrl}}</a></p>
-            </div>
-            <div class='col-sm-4'>
-                <p>Languages supported:
-                    {% for ls in entry.languagesSupported %}
-                    <button type="button" class="btn btn-primary btn-xs"
-                            onclick="document.searchSomething('{{ls}}')">{{ls}}
-                    </button>
-                    {% endfor %}
-                </p>
-
-                <p>Language: {{entry.language}}</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="panel-footer">
-        {% for tag in entry.tags %}
-        <button type="button" class="btn btn-primary btn-xs"
-                onclick="document.searchSomething('{{tag}}')">{{tag}}
-        </button>
-        {% endfor %}
     </div>
 </div>
-{% endfor %}

@@ -6,7 +6,7 @@ description: |
     loading data from Apache Parquet columnar storage format on the Hadoop distributed filesystem.
 url: http://adobe-research.github.io/spindle/
 repoUrl: https://github.com/adobe-research/spindle
-icon: no-image.png
+icon:
 tags: [Spark, Distrubuted filesystem, Distributed programming, Aggregation engines]
 language: Javascript, Python, Scala
 languagesSupported: []
