@@ -1,0 +1,11 @@
+name: MongoDB
+description: MongoDB (from humongous) is a document-oriented database. MongoDB is schemaless and uses JSON-like documents. It supports ad hoc queries, indexes, file storage, server-side JavaScript execution and complex aggregation queries, replication and sharding.
+url: https://www.mongodb.org/
+repoUrl: https://github.com/mongodb/mongo
+icon: mongodb.png
+tags: [NoSQL database]
+language: C++
+languagesSupported: [C, C++, C#, Java, Node.js, Perl, PHP, Python, Ruby, Scala, Go, Erlang]
+license: "GNU Affero General Public License 3.0"
+companyName: MongoDB, Inc
+companyUrl: http://www.mongodb.com/
