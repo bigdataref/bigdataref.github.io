@@ -1,9 +1,18 @@
-language: node_js
+language: ruby
+
+rvm:
+- 2.1
 
 before_install:
   - gem install liquid -v 2.5.1 --no-rdoc --no-ri
   - gem install jekyll -v 1.0.2 --no-rdoc --no-ri
+  - gem install 'github-pages' --no-rdoc --no-ri
+  - gem install 'html-proofer' --no-rdoc --no-ri
 
-script:
-  - jekyll doctor
-  - jekyll build
+before_script: chmod +x ./script/cibuild
+
+script: ./script/cibuild
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
