@@ -1,32 +1,20 @@
-<header class="site-header">
+<header>
+    <div class="bdr-brb-war bg-primary">
+        <div class="container bdr-main-container ">
 
-    <div class="wrapper">
-    </div>
+            <h1 class="text-center bdr-main-h1"><span class="bg-primary bdr-main-h1-txt">Big Data Ref.</span></h1>
 
-    <div class="navbar navbar-inverse">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target=".navbar-inverse-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <p class="navbar-brand">Big Data Ref</p>
+            <h2 class="text-center text-success bdr-main-h2 ">Search everything you want into big data world.</h2>
 
-            <p class="navbar-text">Search anything you want into big data world.</p>
-        </div>
-        <div class="navbar-collapse collapse navbar-inverse-collapse">
-            <div class="navbar-form navbar-left" >
-                <div class="input-group">
-                    <input type="text" id="search-query" name="q" class="form-control"
-                           placeholder="Search here" autocomplete="off" style="width:80%">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-9 col-sm-offset-0 col-xs-12 form-group">
+                    <input type="text" id="js-search-query" name="q" class="bdr-search form-control" autocomplete="off">
                 </div>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commons Tags <b
-                            class="caret"></b></a>
-                    <ul class="dropdown-menu">
+                <div class="btn-group col-lg-2 col-md-3 col-sm-3 col-sm-offset-0 col-xs-offset-4 col-xs-8">
+                    <button type="button" class="btn btn-primary bdr-btn-primary-hard bdr-dropdown-toggle dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Commons Tags <span class="caret bdr-mls"></span>
+                    </button>
+                    <ul class="dropdown-menu bdr-dropdown-menu" role="menu">
                         {% for tag in site.data.variables.commonsTags %}
                         <li><a href="javascript:document.searchSomething('{{tag}}')">{{tag}}</a></li>
                         {% unless forloop.last %}
@@ -34,8 +22,10 @@
                         {% endunless %}
                         {% endfor %}
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
+
+
         </div>
     </div>
 

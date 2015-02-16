@@ -12,7 +12,7 @@ description: |
     and the data cube maintains all the counters as you supply new data points.
 url: 
 repoUrl: https://github.com/urbanairship/datacube
-icon: no-image.png
+icon:
 tags: [Aggregation engines]
 language: Java
 languagesSupported: [Java]

@@ -5,7 +5,7 @@ description: |
     unit tests and deploy scripts. It was originally started at Ooyala.
 url:
 repoUrl: https://github.com/spark-jobserver/spark-jobserver
-icon: no-image.png
+icon:
 tags: [Spark, System deployment, Distributed programming]
 language: Scala
 languagesSupported: [Scala]
