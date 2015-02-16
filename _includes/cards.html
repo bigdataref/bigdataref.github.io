@@ -27,16 +27,32 @@
 
                     <div class="col-md-2 col-sm-3 col-xs-12 bdr-actions">
                         <div class="bdr-mbs text-uppercase clearfix">
-                            <a class="bdr-bold btn btn-success pull-left bdr-half {% if entry.url == null %}disabled bdr-disabled{% endif %}" href="{{entry.url}}" target="_blank">Site</a>
-                            <a class="bdr-bold btn btn-success pull-left bdr-half {% if entry.repoUrl == null %}disabled bdr-disabled{% endif %}" href="{{entry.repoUrl}}" target="_blank">Repo</a>
+                            {% if entry.url %}
+                            	<a class="bdr-bold btn btn-success pull-left bdr-half" href="{{entry.url}}" target="_blank">Site</a>
+                            {% else %}
+                            	<a class="bdr-bold btn btn-success pull-left bdr-half disabled bdr-disabled" href="#" target="_blank">Site</a>
+                            {% endif %}
+                            
+							{% if entry.repoUrl %}
+								<a class="bdr-bold btn btn-success pull-left bdr-half" href="{{entry.repoUrl}}" target="_blank">Repo</a>
+							{% else %}
+								<a class="bdr-bold btn btn-success pull-left bdr-half disabled bdr-disabled" href="#" target="_blank">Repo</a>
+							{% endif %}
                         </div>
 
                         {% if entry.companyName %}
                             <span class="text-uppercase bdr-full bdr-dib bdr-xs-no-full bdr-info">
                                 <span class="text-muted">Company: </span>
-                                <a class="bdr-bold {% if entry.companyUrl == null %}disabled bdr-disabled{% endif %}" href="{{entry.companyUrl}}" target="_blank">
-                                {{entry.companyName}}
-                                </a>
+
+                                {% if entry.companyUrl %}
+                                	<a class="bdr-bold" href="{{entry.companyUrl}}" target="_blank">
+                                		{{entry.companyName}}
+                                	</a>
+                                {% else %}
+                                    <a class="bdr-bold disabled bdr-disabled" href="#" target="_blank">
+                                		{{entry.companyName}}
+                                	</a>
+                                {% endif %}
                             </span>
                         {% endif %}
 
@@ -72,12 +88,9 @@
                             {{tag}}
                         </button>
                         {% endfor %}
-
                     </aside>
                 </div>
                 {% endif %}
-
-
             </article>
         </div>
 
