@@ -6,7 +6,7 @@ description: |
     for resource management and scheduling across entire datacenter and cloud environments.
 url: http://mesos.apache.org/
 repoUrl: https://github.com/apache/mesos
-icon: mesos.jpg
+icon: mesos.png
 tags: [Cluster managers]
 language: C++
 languagesSupported:
