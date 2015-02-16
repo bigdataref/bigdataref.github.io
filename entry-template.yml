@@ -30,6 +30,7 @@ icon:
 #Aggregation engines
 #SQL engines
 #Data viewers
+#Queues
 tags:[]
 
 #Entry language. Example: Java
