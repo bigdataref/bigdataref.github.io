@@ -1,0 +1,17 @@
+name: Pig
+description: Apache Pig is a platform for analyzing large data sets that consists of a high-level language for
+expressing data analysis programs, coupled with infrastructure for evaluating these programs. The salient property of
+ Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to
+ handle very large data sets. At the present time, Pig's infrastructure layer consists of a compiler that produces
+ sequences of Map-Reduce programs, for which large-scale parallel implementations already exist (e.g., the Hadoop
+ subproject). Pig language layer currently consists of a textual language called Pig Latin, which has the following
+ key properties: Ease of programming, optimization opportunities, Extensibility.
+url: http://pig.apache.org/
+repoUrl: https://github.com/apache/pig
+icon: pig.png
+tags: [Distributed programming]
+language: Java
+languagesSupported: Pig Latin
+license: Apache 2
+companyName:
+companyUrl:
