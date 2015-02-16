@@ -16,7 +16,7 @@
                     </button>
                     <ul class="dropdown-menu bdr-dropdown-menu" role="menu">
                         {% for tag in site.data.variables.commonsTags %}
-                        <li><a onclick="document.searchSomething('{{tag}}')">{{tag}}</a></li>
+                        <li><a href="javascript:document.searchSomething('{{tag}}')">{{tag}}</a></li>
                         {% unless forloop.last %}
                         <li class="divider"></li>
                         {% endunless %}
