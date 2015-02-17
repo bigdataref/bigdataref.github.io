@@ -6,6 +6,6 @@ icon: mongodb.png
 tags: [NoSQL database]
 language: C++
 languagesSupported: [C, C++, C#, Java, Node.js, Perl, PHP, Python, Ruby, Scala, Go, Erlang]
-license: "GNU Affero General Public License 3.0"
+license: GNU Affero General Public License 3.0
 companyName: MongoDB, Inc
 companyUrl: http://www.mongodb.com/
