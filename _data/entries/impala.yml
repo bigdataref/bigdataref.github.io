@@ -1,0 +1,13 @@
+name: Impala
+description: |
+    Impala is a fully integrated, state-of-the-art analytic database architected specifically to leverage the flexibility and scalability strengths of Hadoop - combining the familiar SQL support and multi-user performance of a traditional analytic database with the rock-solid foundation of open source Apache Hadoop and the production-grade security and management extensions of Cloudera Enterprise.
+    Impala is an integrated part of a Cloudera enterprise data hub - taking advantage of the unified resource management, metadata, security, and system administration across multiple frameworks. It is the de facto standard for open source interactive business intelligence and data discovery - certified with the leading BI and analytic application vendors and supported broadly across the Hadoop ecosystem.
+url: http://impala.io/
+repoUrl: https://github.com/cloudera/impala
+icon: impala.png
+tags: [Distributed programming, SQL engines, Aggregation engines]
+language: C
+languagesSupported: [Sql]
+license: Apache 2
+companyName: Cloudera
+companyUrl: http://www.cloudera.com

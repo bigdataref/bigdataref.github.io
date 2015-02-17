@@ -1,0 +1,12 @@
+name: Redis
+description: |
+    Redis is an open source, BSD licensed, advanced key-value cache and store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs.
+url: http://redis.io/
+repoUrl: https://github.com/antirez/redis
+icon: redis.png
+tags: [NoSQL database, Queues]
+language: C
+languagesSupported: [Java, Erlang, Go, Perl, Python, Scala]
+license: Apache 2
+companyName:
+companyUrl:

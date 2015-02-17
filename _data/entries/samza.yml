@@ -1,0 +1,19 @@
+name: Samza
+description: |
+    Apache Samza is a distributed stream processing framework. It uses Apache Kafka for messaging, and Apache Hadoop YARN to provide fault tolerance, processor isolation, security, and resource management.
+    Simple API: Unlike most low-level messaging system APIs, Samza provides a very simple callback-based “process message” API comparable to MapReduce.
+    Managed state: Samza manages snapshotting and restoration of a stream processor’s state. When the processor is restarted, Samza restores its state to a consistent snapshot. Samza is built to handle large amounts of state (many gigabytes per partition).
+    Fault tolerance: Whenever a machine in the cluster fails, Samza works with YARN to transparently migrate your tasks to another machine.
+    Durability: Samza uses Kafka to guarantee that messages are processed in the order they were written to a partition, and that no messages are ever lost.
+    Scalability: Samza is partitioned and distributed at every level. Kafka provides ordered, partitioned, replayable, fault-tolerant streams. YARN provides a distributed environment for Samza containers to run in.
+    Pluggable: Though Samza works out of the box with Kafka and YARN, Samza provides a pluggable API that lets you run Samza with other messaging systems and execution environments.
+    Processor isolation: Samza works with Apache YARN, which supports Hadoop’s security model, and resource isolation through Linux CGroups.
+url: http://samza.apache.org/
+repoUrl: https://github.com/apache/samza
+icon: samza.png
+tags: [Distributed programming, Realtime processing]
+language: Scala
+languagesSupported: [Java, Scala]
+license: Apache 2.0
+companyName: LinkedIn
+companyUrl: http://www.linkedin.com

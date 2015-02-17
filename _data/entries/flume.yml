@@ -1,0 +1,14 @@
+name: Flume
+description: |
+    Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. It has a simple and flexible
+    architecture based on streaming data flows. It is robust and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a
+    simple extensible data model that allows for online analytic application.
+url: http://flume.apache.org/
+repoUrl: https://github.com/apache/flume
+icon: flume.png
+tags: [Data ingestion, Realtime processing]
+language: Java
+languagesSupported: []
+license: Apache 2.0
+companyName:
+companyUrl:
