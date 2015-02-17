@@ -1,0 +1,15 @@
+name: DL4J
+description: |
+    Deeplearning4j is the first commercial-grade, open-source, distributed deep-learning library written 
+    for Java and Scala. Integrated with Hadoop and Spark, DL4J is designed to be used in business environments, 
+    rather than as a research tool. It aims to be cutting-edge plug and play, more convention than configuration, 
+    which allows for fast prototyping for non-researchers.
+url: http://deeplearning4j.org/
+repoUrl: https://github.com/deeplearning4j/deeplearning4j
+icon:
+tags: [Machine learning,Spark,Hadoop]
+language: Java
+languagesSupported: [Java,Scala]
+license: Apache 2.0
+companyName:
+companyUrl:
