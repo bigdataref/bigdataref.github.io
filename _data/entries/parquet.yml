@@ -1,0 +1,15 @@
+name: Parquet
+description:  |
+    Apache Parquet is a columnar storage format available to any project in the Hadoop ecosystem and others project that
+     doesn't belong the Hadoop ecosystem(like Apache Spark), regardless of the choice of data processing framework,
+     data model or programming language.
+
+url: http://parquet.incubator.apache.org/
+repoUrl: https://github.com/apache/incubator-parquet-mr
+icon: parquet.png
+tags: [Distributed File System, Hadoop, HDFS]
+language: Java, C++
+languagesSupported:
+license: Apache 2
+companyName:
+companyUrl:
