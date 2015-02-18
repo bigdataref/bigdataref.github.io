@@ -31,7 +31,7 @@ icon: elasticsearch.png
 #SQL engines
 #Data viewers
 #Queues
-tags:[NoSQL database, Search engine]
+tags: [NoSQL database, Search engine]
 
 #Entry language. Example: Java
 language: Java
