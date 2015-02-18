@@ -1,48 +1,11 @@
-#Name of the entry Spark, Kafka, etc.
 name: Elastic Search
-
-#A short description of the application
-description: Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search. Through its robust set of APIs and query DSLs, plus clients for the most popular programming languages, Elasticsearch delivers on the near limitless promises of search technology.
-
-#Url official page
+description: Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search. Through its robust set of APIs and query DSLs, plus clients for the most popular programming languages, Elasticsearch delivers on the near limitless promises of search technology..
 url: http://www.elasticsearch.org/
-
-#If the project have one, Url of the repo
 repoUrl: http://github.com/elasticsearch
-
-#Icon name contained into icons folder. Example: spark.png. It must be 100X100 size
 icon: elasticsearch.png
-
-#Tags to help to find the entry. There are some frecuents tags:
-#Distributed filesystem
-#Distributed programming
-#Realtime processing
-#NoSQL database
-#NewSQL database
-#Data ingestion
-#Service programming
-#Scheduling
-#Machine learning
-#Benchmarking
-#Security
-#System deployment
-#Development frameworks
-#Aggregation engines
-#SQL engines
-#Data viewers
-#Queues
 tags: [NoSQL database, Search engine]
-
-#Entry language. Example: Java
 language: Java
-
-#Entry languages supported. Example: [Java,Scala,Python]
-languagesSupported: Java
-
-#Entry license. Example: Apache 2
+languagesSupported: [Java, Scala, Python, Go, R, Ruby]
 license: Apache 2
-
-#Company that maintain the entry, if any
 companyName: Elasticsearch
-#Company url that maintain the entry, if any
 companyUrl: http://www.elasticsearch.com/
