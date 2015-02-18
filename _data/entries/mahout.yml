@@ -1,0 +1,18 @@
+name: Mahout
+description: |
+        The Apache Mahout project's goal is to build a scalable machine learning library.
+        Scalable to large data sets. Our core algorithms for clustering, classfication and collaborative filtering are implemented on top of scalable, distributed systems. However, contributions that run on a single machine are welcome as well.
+        Scalable to support your business case. Mahout is distributed under a commercially friendly Apache Software license.
+        Scalable community. The goal of Mahout is to build a vibrant, responsive, diverse community to facilitate discussions not only on the project itself but also on potential use cases. Come to the mailing lists to find out more.
+        Currently Mahout supports mainly three use cases: Recommendation mining takes users' behavior and from that tries to find items users might like. Clustering takes e.g.
+        text documents and groups them into groups of topically related documents. Classification learns from exisiting categorized documents what documents of a specific category
+        look like and is able to assign unlabelled documents to the (hopefully) correct category.
+url: http://mahout.apache.org/
+repoUrl: https://github.com/apache/mahout
+icon: mahout.png
+tags: [Machine learning,Hadoop]
+language: Java
+languagesSupported: [Java]
+license: Apache 2.0
+companyName:
+companyUrl:
