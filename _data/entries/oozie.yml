@@ -1,0 +1,17 @@
+name: Oozie
+description: |
+    Oozie is a workflow scheduler system to manage Apache Hadoop jobs.
+    Its Workflows jobs are Directed Acyclical Graphs (DAGs) of actions.
+    Oozie Coordinator jobs are recurrent Oozie Workflow jobs triggered by time (frequency) and data availabilty.
+    Is integrated with the rest of the Hadoop stack supporting several types of Hadoop jobs out of the box
+    (such as Java map-reduce, Streaming map-reduce, Pig, Hive, Sqoop and Distcp) as well as system specific jobs
+    (such as Java programs and shell scripts). Indeed is a scalable, reliable and extensible system.
+url: http://oozie.apache.org/
+repoUrl: https://github.com/apache/oozie
+icon: oozie.png
+tags: [Scheduling, Coordination]
+language: Java
+languagesSupported: [XML]
+license: Apache 2
+companyName:
+companyUrl:

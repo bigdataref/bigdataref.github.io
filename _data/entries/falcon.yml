@@ -1,0 +1,14 @@
+name: Falcon
+description: |
+    Apache Falcon is a data governance engine that defines, schedules, and monitors data management policies. Falcon
+    allows Hadoop administrators to centrally define their data pipelines, and then Falcon uses those definitions to
+    auto-generate workflows in Apache Oozie.
+url: http://falcon.apache.org/
+repoUrl: https://github.com/apache/falcon
+icon: falcon.png
+tags: [Scheduling, Coordination]
+language: Java
+languagesSupported:
+license: Apache 2
+companyName: Hortonworks
+companyUrl: http://www.hortonworks.com

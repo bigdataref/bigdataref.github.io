@@ -1,0 +1,14 @@
+name: Hyperdex
+description: |
+    HyperDex is a next generation key-value and document store with a wide array of features. HyperDex's key features --
+    namely its rich API, strong consistency, fault tolerance, support for MongoDB API, and ease of use -- provide strong guarantees
+     to applications that are not matched by other NoSQL systems.
+url: http://hyperdex.org/
+repoUrl: https://github.com/rescrv/HyperDex
+icon: hyperdex.png
+tags: [NoSQL database, KeyValue]
+language: C++
+languagesSupported: [C, Python, Java, Go, Node, Ruby]
+license: ¿?
+companyName:
+companyUrl:

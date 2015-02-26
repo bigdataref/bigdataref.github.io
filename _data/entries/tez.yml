@@ -1,0 +1,13 @@
+name: Tez
+description: |
+    Apache Tez is a generic data-processing pipeline engine envisioned as a low-level engine for higher abstractions
+    such as Apache Hadoop Map-Reduce, Apache Pig, Apache Hive etc.
+url: http://tez.apache.org/
+repoUrl: https://github.com/apache/tez
+icon: tez.png
+tags: [Distrubuted programming,Hadoop, YARN]
+language: Java
+languagesSupported: [Java]
+license: Apache 2
+companyName: Hortonworks
+companyUrl: http://www.hortonworks.com
