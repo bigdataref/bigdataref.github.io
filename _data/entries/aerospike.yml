@@ -12,4 +12,4 @@ language: C
 languagesSupported: [Cql]
 license: Apache 2
 companyName: Aerospike
-companyUrl: http://www.aerospike  .com
+companyUrl: http://www.aerospike.com
