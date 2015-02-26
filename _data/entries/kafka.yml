@@ -8,7 +8,7 @@ description: |
 url: http://kafka.apache.org/
 repoUrl: https://github.com/apache/kafka
 icon: kafka.png
-tags: [Queues]
+tags: [Queues, Realtime processing]
 language: Scala
 languagesSupported: [Java, Scala, Go, C, C++, Python]
 license: Apache 2

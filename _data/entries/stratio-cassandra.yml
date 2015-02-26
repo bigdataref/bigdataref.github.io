@@ -1,0 +1,14 @@
+name: Stratio-Cassandra
+description: |
+    Stratio Cassandra is a fork of Apache Cassandra where index functionality has been extended to provide near real time search such as ElasticSearch or Solr, including
+    full text search capabilities and free multivariable search. It is achieved through an Apache Lucene based implementation of Cassandra secondary indexes,
+    where each node of the cluster indexes its own data. Stratio Cassandra is one of the core modules on which Stratio’s BigData platform (SDS) is based.
+url: https://github.com/Stratio/stratio-cassandra
+repoUrl: https://github.com/Stratio/stratio-cassandra
+icon:
+tags: [NoSQL database, Lucene Indexes]
+language: Java
+languagesSupported: [Cql, Lucene]
+license: Apache 2
+companyName: Stratio
+companyUrl: http://www.stratio.com
