@@ -1,0 +1,15 @@
+name: NiFi
+description: |
+    Apache NiFi is an easy to use, powerful, and reliable system to process and distribute data. Apache NiFi was made
+    for dataflow. It supports highly configurable directed graphs of data routing, transformation, and system mediation
+    logic. Some of its key features include: Web-based user interface, Highly configurable, Data Provenance, Designed
+    for extension and Secure.
+url: https://nifi.incubator.apache.org
+repoUrl: https://github.com/apache/incubator-nifi
+icon: nifi.png
+tags: [Data ingestion, Realtime processing]
+language: Java
+languagesSupported: []
+license: Apache 2.0
+companyName:
+companyUrl:

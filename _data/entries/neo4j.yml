@@ -1,0 +1,15 @@
+name: Neo4j
+description: |
+    Neo4j is a Graph Database. It is a high performance graph store with all the features expected of
+    a mature and robust database, like a friendly query language and ACID transactions. The programmer works with a flexible
+    network structure of nodes and relationships rather than static tables — yet enjoys all the benefits of enterprise-quality database.
+    For many applications, Neo4j offers orders of magnitude performance benefits compared to relational DBs.
+url: http://neo4j.com/
+repoUrl: https://github.com/neo4j/neo4j
+icon: neo4j.png
+tags: [NoSQL database, Graphs]
+language: Java
+languagesSupported: [Java, Cypher]
+license: Apache 2
+companyName: Neo4j
+companyUrl: http://www.neo4j.com

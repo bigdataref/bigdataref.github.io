@@ -1,0 +1,13 @@
+name: Streaming CEP Engine
+description: |
+    Streaming CEP engine is a Complex Event Processing platform built on Spark Streaming. It is the result of
+    combining the power of Spark Streaming as a continuous computing framework and Siddhi CEP engine as complex event processing engine.
+url: https://github.com/Stratio/streaming-cep-engine
+repoUrl: https://github.com/Stratio/streaming-cep-engine
+icon:
+tags: [Realtime processing,Distrubuted programming]
+language: Scala
+languagesSupported: [SQL]
+license: Apache 2
+companyName: Stratio
+companyUrl: http://www.stratio.com

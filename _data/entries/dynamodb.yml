@@ -6,7 +6,7 @@ description: |
 url: https://aws.amazon.com/dynamodb/
 repoUrl:
 icon: dynamodb.png
-tags: [NoSQL database]
+tags: [NoSQL database, KeyValue]
 language:
 languagesSupported: [Java, NodeJS, Perl, Ruby, Python]
 license: Proprietary

@@ -1,0 +1,13 @@
+name: Drill
+description: |
+    Apache Drill is a distributed MPP query layer that supports SQL and alternative query languages against NoSQL and Hadoop data storage systems. It was inspired in part
+    by Google's Dremel.
+url: http://drill.apache.org/
+repoUrl: https://github.com/apache/drill
+icon:
+tags: [Distrubuted programming,NoSQL database,SQL engines]
+language: Java
+languagesSupported: [SQL]
+license: Apache 2
+companyName:
+companyUrl:

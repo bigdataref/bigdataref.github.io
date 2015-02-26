@@ -1,5 +1,9 @@
 name: Spark
-description: Apache Spark is an open-source cluster computing framework originally developed in the AMPLab at UC Berkeley. In contrast to Hadoop's two-stage disk-based MapReduce paradigm, Spark's in-memory primitives provide performance up to 100 times faster for certain applications.
+description: |
+    Apache Spark is an open-source cluster computing framework originally developed in the AMPLab at UC Berkeley. In contrast to Hadoop's two-stage disk-based
+    MapReduce paradigm, Spark's in-memory primitives provide performance up to 100 times faster for certain applications. The Spark engine runs in a variety of environments,
+    from cloud services to Hadoop or Mesos clusters. It is used to perform ETL, interactive queries (SQL), advanced analytics (e.g. machine learning) and streaming over
+    large datasets in a wide range of data stores (e.g. HDFS, Cassandra, HBase, S3). Spark supports a variety of popular development languages including Java, Python and Scala.
 url: https://spark.apache.org/
 repoUrl: https://github.com/apache/spark
 icon: spark.png
