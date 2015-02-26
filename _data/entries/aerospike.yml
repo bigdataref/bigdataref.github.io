@@ -6,7 +6,7 @@ description: |
     To provide operational efficiency (minimal manual involvement)
 url: http://www.aerospike.com/
 repoUrl: https://github.com/aerospike/aerospike-server
-icon: cassandra.png
+icon: aerospike.png
 tags: [NoSQL database]
 language: C
 languagesSupported: [Cql]
