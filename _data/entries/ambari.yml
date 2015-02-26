@@ -3,7 +3,7 @@ description: |
     Apache Ambari is a completely open operational framework for provisioning, managing and monitoring Apache Hadoop clusters. Ambari includes an intuitive collection of operator tools and a set of APIs that mask the complexity of Hadoop, simplifying the operation of clusters. With hundreds of years of combined experience, Hortonworks, along with members of the Hadoop community have answered the call to deliver the key services required for enterprise Hadoop.
 url: http://ambari.apache.org/
 repoUrl: https://github.com/apache/ambari
-icon: ambari.jpg
+icon: ambari.png
 tags: [System deployment]
 language: Java
 languagesSupported:

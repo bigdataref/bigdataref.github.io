@@ -2,7 +2,7 @@ name: Cockroach
 description: Cockroach is a distributed key/value datastore which supports ACID transactional semantics and versioned values as first-class features. The primary design goal is global consistency and survivability, hence the name. Cockroach aims to tolerate disk, machine, rack, and even datacenter failures with minimal latency disruption and no manual intervention. Cockroach nodes are symmetric; a design goal is one binary with minimal configuration and no required auxiliary services.
 url: http://cockroachdb.org/
 repoUrl: https://github.com/cockroachdb/cockroach
-icon: cockroach.jpg
+icon: cockroach.png
 tags: ["NewSQL database", "NoSQL database"]
 language: Go
 languagesSupported: [SQL]

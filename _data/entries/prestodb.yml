@@ -5,7 +5,7 @@ description:  |
     data warehouses while scaling to the size of organizations like Facebook.
 url: http://prestodb.io/
 repoUrl: https://github.com/facebook/presto
-icon: prestodb.jpg
+icon: prestodb.png
 tags: [SQL engines,NoSQL database]
 language: Java
 languagesSupported: SQL
