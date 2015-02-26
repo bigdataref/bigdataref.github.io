@@ -1,0 +1,15 @@
+name: Aerospike
+description: |
+    Aerospike is a distributed, scalable NoSQL database. It is architected with three key objectives:
+    To create a high-performance, scalable platform that would meet the needs of today’s web-scale applications
+    To provide the robustness and reliability (ie, ACID) expected from traditional databases.
+    To provide operational efficiency (minimal manual involvement)
+url: http://www.aerospike.com/
+repoUrl: https://github.com/aerospike/aerospike-server
+icon: aerospike.png
+tags: [NoSQL database]
+language: C
+languagesSupported: [Cql]
+license: Apache 2
+companyName: Aerospike
+companyUrl: http://www.aerospike.com

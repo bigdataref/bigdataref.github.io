@@ -1,0 +1,15 @@
+name: Pulsar
+description: |
+    An open-source, real-time analytics platform and stream processing framework. Pulsar can be used to collect and process user and business events in real time,
+    providing key insights and enabling systems to react to user activities within seconds. In addition to real-time sessionization and multi-dimensional metrics
+    aggregation over time windows, Pulsar uses a SQL-like event processing language to offer custom stream creation through data enrichment, mutation, and filtering.
+    Pulsar scales to a million events per second with high availability. It can be easily integrated with metrics stores like Cassandra and Druid.
+url: http://gopulsar.io/
+repoUrl: https://github.com/pulsarIO/realtime-analytics/
+icon: pulsar.png
+tags: [Realtime processing, CEP]
+language: Java
+languagesSupported: [Java, SQL-Like]
+license: GPLv2
+companyName: Ebay
+companyUrl: http://ebay.com

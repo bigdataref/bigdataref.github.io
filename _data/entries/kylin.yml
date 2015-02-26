@@ -5,7 +5,7 @@ description: |
     supporting extremely large datasets.
 url: http://www.kylin.io/
 repoUrl: https://github.com/KylinOLAP/Kylin
-icon: kylin.jpg
+icon: kylin.png
 tags: [Aggregation engines, Hadoop, OLAP, SQL]
 language: Java, Javascript
 languagesSupported: [SQL]

@@ -1,0 +1,14 @@
+name: Amazon DynamoDB
+description: |
+    Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully
+    managed database and supports both document and key-value data models. Its flexible data model and reliable performance make it a great fit for mobile, web, gaming,
+    ad-tech, IoT, and many other applications.
+url: https://aws.amazon.com/dynamodb/
+repoUrl:
+icon: dynamodb.png
+tags: [NoSQL database]
+language:
+languagesSupported: [Java, NodeJS, Perl, Ruby, Python]
+license: Proprietary
+companyName: Amazon
+companyUrl: http://aws.amazon.com

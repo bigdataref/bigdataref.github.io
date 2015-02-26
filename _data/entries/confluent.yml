@@ -1,0 +1,15 @@
+name: Confluent
+description: |
+    The Confluent Platform is a stream data platform that leverages the proven capabilities of Apache Kafka to make all of your data available as realtime streams.
+    It enables you to easily organize large amounts of data into a well-managed, unified stream data platform for your organization, which can be used for a wide variety
+    of realtime as well as batch operational and analytical purposes. With the Confluent Platform, you can focus more time on deriving business value from your data, and
+    worry less about figuring out how to to move data around in your organization.
+url:   http://confluent.io/product/
+repoUrl:
+icon: confluent.png
+tags: [Queues, Realtime processing]
+language: Scala
+languagesSupported: [Java, Scala, Go, C, C++, Python]
+license:
+companyName: Confluent
+companyUrl: http://confluent.io/

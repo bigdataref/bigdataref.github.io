@@ -1,0 +1,14 @@
+name: Sqoop
+description: |
+    Apache Sqoop is a tool designed for efficiently transferring data betweeen structured, semi-structured and unstructured data sources. Relational databases are examples
+    of structured data sources with well defined schema for the data they store. Cassandra, Hbase are examples of semi-structured data sources and HDFS is an example of
+    unstructured data source that Sqoop can support.
+url: http://sqoop.apache.org/
+repoUrl: https://github.com/apache/sqoop
+icon: sqoop.png
+tags: [Data ingestion]
+language: Java
+languagesSupported:
+license: Apache 2
+companyName:
+companyUrl:
